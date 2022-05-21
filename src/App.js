@@ -11,6 +11,7 @@ export default class App extends Component {
   }
 
   fetchAdvice = () => {
+    // Fetches a random advice id between 1 to 224 (At the time of making this site there were maximum 224 advices were available on Advice API)
     const random = Math.floor(Math.random() * (224 - 1 + 1) + 1);
     axios
       .get("https://api.adviceslip.com/advice/" + random)
@@ -29,7 +30,10 @@ export default class App extends Component {
     return (
       <div className="app">
         <div className="card">
+          {/* Actual advice */}
           <h1 className="heading">{advice}</h1>
+
+          {/* To change advice */}
           <button
             className="button"
             onClick={() => {

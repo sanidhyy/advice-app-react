@@ -1,5 +1,7 @@
+/* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&display=swap");
 
+/* Reset Default Styles */
 #root,
 html,
 body {
@@ -35,13 +37,16 @@ body {
   box-shadow: 39px 39px 17px 4px rgba(0, 0, 0, 0.19);
 }
 
+/* Actual Advice text */
 .heading {
   display: flex;
   align-items: center;
   height: 582px;
   font-family: "League Spartan", sans-serif;
+  font-weight: 600;
 }
 
+/* button which updates advice */
 .button {
   position: relative;
   outline: none;
@@ -75,6 +80,7 @@ body {
   animation-delay: 0.06s;
 }
 
+/* button animations */
 @keyframes rotate {
   0% {
     transform: rotate(0deg) translate3d(0, 0, 0);
@@ -111,6 +117,7 @@ body {
   }
 }
 
+/* Responsiveness */
 @media only screen and (max-width: 600px) {
   .card {
     width: 80%;
